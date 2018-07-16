@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    padding-left: 70px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: auto;
+}
+.checked {
+    color: orange;
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Personal Info')" id="defaultOpen">Personal Info</button>
+  <button class="tablinks" onclick="openCity(event, 'Summary')">Summary</button>
+  <button class="tablinks" onclick="openCity(event, 'Experience')">Experience</button>
+  <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+  <button class="tablinks" onclick="openCity(event, 'Skills')">Skills</button>
+  <button class="tablinks" onclick="openCity(event, 'Certificates')">Certificates</button>
+  <button class="tablinks" onclick="openCity(event, 'Languages')">Languages</button>
+  <button class="tablinks" onclick="openCity(event, 'Interests')">Interests</button>
+</div>
+<div id="Personal Info" class="tabcontent" >
+ <div class="col-sm-12" style="text-align:center;font-size:40px;">Personal Info</div>
+  <form>
+  	<div class="form-group clearfix">
+	    <div class="col-sm-6" >
+	       <div class="form-group">
+	       <label for="exampleInputfirstname">First name</label>
+	       <input type="text" class="form-control" id="exampleInputfirstname" placeholder="First name">
+	       </div>
+	    </div>
+	    <div class="col-sm-6" >
+	       <div class="form-group">
+	           <label for="exampleInputlastname">Last name</label>
+	           <input type="text" class="form-control" id="exampleInputlastname" placeholder="Last name">
+	       </div>
+	    </div>
+	</div>
+  <div class="col-sm-12" >
+	<div class="form-group">
+      <label for="exampleInputProfession">Profession</label>
+      <input type="text" class="form-control" id="exampleInputProfession" placeholder="e.g:Web Developer">
+    </div>
+    </div>
+   <div class="col-sm-12" >
+  <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  </div>
+   <div class="col-sm-12" >
+  <div class="form-group">
+      <label for="exampleInputcontactnumber">Phone</label>
+      <input type="text" class="form-control" id="exampleInputcontactnumber" placeholder="Last name">
+  </div>
+  </div>
+   <div class="col-sm-12" >
+  <div class="form-group">
+      <label for="exampleInputDOB">Date of Birth</label>
+      <input type="date" class="form-control" id="exampleInputDOB" placeholder="DOB">
+  </div>
+  </div>
+   <div class="col-sm-12" >
+  <div class="form-group">
+      <label for="exampleInputaddress">Address</label>
+      <textarea class="form-control" rows="3" id="exampleInputaddress" placeholder="Address"></textarea>
+   </div>
+   </div>
+  <a href="#" class="btn btn-primary btn-lg active" style="float:right;" role="button">Next</a>
+
+  </div>
+
+<div id="Summary" class="tabcontent">
+ <div class="col-sm-12" style="text-align:center; font-size:40px;">Summary</div>
+ <br>
+ <textarea class="form-control" rows="8" id="exampleInputaddress" placeholder="#"></textarea>
+ <br>
+ <p >
+ <a href="#" class="btn btn-primary btn-lg active" style="float:right;" role="button">Next</a>
+ <a href="#" class="btn btn-default btn-lg active" style="float:right;" role="button">Previous</a>
+ </p>
+<br>
+<br>
+</div>
+
+<div id="Experience" class="tabcontent">
+ <div class="col-sm-12" style="text-align: center;font-size:40px;">Experience</div>
+   <div class="form-group clearfix">
+	    <div class="col-sm-6" >
+	       <div class="form-group">
+	       <label for="exampleInputfirstname">Position</label>
+	       <input type="text" class="form-control" id="exampleInputPosition" placeholder="e.g. Web Developer">
+	       </div>
+	    </div>
+	    <div class="col-sm-6" >
+	       <div class="form-group">
+	           <label for="exampleInputlastname">Company</label>
+	           <input type="text" class="form-control" id="exampleInputCompany" placeholder="e.g.rupeelend">
+	       </div>
+	    </div>
+	</div>
+	<div class="form-group clearfix">
+	    <div class="col-sm-6" >
+	       <div class="form-group">
+	       <label for="exampleInputDateFrom"> Date From</label>
+	      <input type="date" class="form-control" id="exampleInputDateFrom" >
+	       </div>
+	    </div>
+	    <div class="col-sm-6" >
+	       <div class="form-group">
+	           <label for="exampleInputdateTo">Date To</label>
+	           <input type="date" class="form-control" id="exampleInputDateTo">
+	       </div>
+	    </div>
+	</div>
+	 <div class="col-sm-12" >
+	<div class="form-group">
+      <label for="exampleInputExperience">Experience</label>
+      <textarea class="form-control" rows="3" id="exampleInputExperience" placeholder="Describe your Responsibilities and achievements"></textarea>
+   </div>
+   </div>
+ <p >
+ <a href="#" class="btn btn-primary btn-lg active" style="float:right;" role="button">Next</a>
+ <a href="#" class="btn btn-default btn-lg active" style="float:right;" role="button">Previous</a>
+ </p>
+ </div>
+
+<div id="Education" class="tabcontent">
+  <div class="col-sm-12" style="text-align: center;font-size:40px;">Education</div>
+  	<div class="form-group clearfix">
+	    <div class="col-sm-12" >
+	       <div class="form-group">
+	       <label for="exampleInputEducation">School/University </label>
+	       <input type="text" class="form-control" id="exampleInputPosition" placeholder="Oxford University">
+	       </div>
+	    </div>
+	</div>
+	<div class="form-group clearfix">
+	    <div class="col-sm-6" >
+	       <div class="form-group">
+	       <label for="exampleInputDateFrom"> Date From</label>
+	      <input type="date" class="form-control" id="exampleInputDateFrom" >
+	       </div>
+	    </div>
+	    <div class="col-sm-6" >
+	       <div class="form-group">
+	           <label for="exampleInputdateTo">Date To</label>
+	           <input type="date" class="form-control" id="exampleInputDateTo">
+	       </div>
+	    </div>
+	</div>
+	 <div class="col-sm-12" >
+	<div class="form-group">
+      <label for="exampleInputExperience">Description</label>
+      <textarea class="form-control" rows="3" id="exampleInputDescription" placeholder="B.E. in Computer Science "></textarea>
+   </div>
+   </div>
+    <div class="col-sm-12" >
+   <div class="form-group">
+	       <label for="exampleInputEducation">CGPA/Percentage </label>
+	       <input type="number" class="form-control" id="exampleInputMarks" placeholder="CGPA/Percentage">
+   </div>
+  </div>
+ <p >
+ <a href="#" class="btn btn-primary btn-lg active" style="float:right;" role="button">Next</a>
+ <a href="#" class="btn btn-default btn-lg active" style="float:right;" role="button">Previous</a>
+ </p>
+ </div>
+
+<div id="Skills" class="tabcontent">
+ <div class="col-sm-12" style="text-align: center;font-size:40px;">Skills</div> 
+  	<div class="form-group clearfix">
+	    <div class="col-sm-6" >
+	       <div class="form-group">
+	       <label for="exampleInputSkill">Skill</label>
+	       <input type="text" class="form-control" id="exampleInputSkill" placeholder="e.g. Java">
+	       </div>
+	    </div>
+	    <div class="col-sm-6" >
+	       <div class="form-group">
+	        <label for="exampleInputRating">Star Rating</label>
+	        <p>
+	              <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+            </p>    
+	       </div>
+	    </div>
+	</div>
+     <p>
+         <a href="#" class="btn btn-primary btn-lg active" style="float:right;" role="button">Next</a>
+         <a href="#" class="btn btn-default btn-lg active" style="float:right;" role="button">Previous</a>
+    </p>
+</div>
+
+
+<div id="Certificates" class="tabcontent">
+ <div class="col-sm-12" style="text-align: center;font-size:40px;">Certificates</div>
+  <div class="form-group clearfix">
+	    <div class="col-sm-12" >
+	       <div class="form-group">
+	       <label for="exampleInputCertificate">Certificate</label>
+	       <input type="text" class="form-control" id="exampleInputCertificate" >
+	       </div>
+	    </div>
+	    <div class="form-group clearfix">
+	       <div class="col-sm-12" >
+	         <div class="form-group">
+	         <label for="exampleInputDateFrom"> Date</label>
+	         <input type="date" class="form-control" id="exampleInputDateFrom" >
+	         </div>
+	       </div>
+	    </div>
+   </div>
+	   <p>
+         <a href="#" class="btn btn-primary btn-lg active" style="float:right;" role="button">Next</a>
+         <a href="#" class="btn btn-default btn-lg active" style="float:right;" role="button">Previous</a>
+      </p>	   
+</div>
+
+<div id="Languages" class="tabcontent">
+   <div class="col-sm-12" style="text-align: center;font-size:40px;">Languages</div>
+     <div class="form-group clearfix">
+	    <div class="col-sm-12" >
+	       <div class="form-group">
+	       <label for="exampleInputLanguages">Language</label>
+	       <input type="text" class="form-control" id="exampleInputLanguages" placeholder="e.g. English" >
+	       </div>
+	    </div>
+	    <div class="col-sm-12" >
+	       <div class="form-group">
+	        <label for="exampleInputRating">Star Rating</label>
+	        <p>
+	              <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+           </p>    
+	       </div>
+	    </div>
+	  </div>
+	    <p>
+         <a href="#" class="btn btn-primary btn-lg active" style="float:right;" role="button">Next</a>
+         <a href="#" class="btn btn-default btn-lg active" style="float:right;" role="button">Previous</a>
+      </p>
+</div>
+
+<div id="Interests" class="tabcontent">
+ <div class="col-sm-12" style="text-align: center;font-size:40px;">Interests</div>
+ <div class="form-group clearfix">
+	    <div class="col-sm-12" >
+	       <div class="form-group">
+	       <label for="exampleInputInterest">Interests</label>
+	       <input type="text" class="form-control" id="exampleInputInterest" placeholder="e.g. Reading" >
+	       </div>
+	    </div>
+	    </div>
+	    <button type="submit" class="btn btn-success" style="float:right;">Submit</button>
+   </div>
+</form>	
+</div>
+<script>
+function openCity(evt, cityName){
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</div>
+</body>
+</html>
